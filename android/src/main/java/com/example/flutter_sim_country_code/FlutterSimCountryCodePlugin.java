@@ -50,8 +50,7 @@ public class FlutterSimCountryCodePlugin implements FlutterPlugin, MethodCallHan
 
   @Override
   public void onAttachedToEngine(@NonNull FlutterPluginBinding binding) {
-    final FlutterSimCountryCodePlugin instance = new FlutterSimCountryCodePlugin();
-    instance.initInstance(binding.getBinaryMessenger(), binding.getApplicationContext());
+    initInstance(binding.getBinaryMessenger(), binding.getApplicationContext());
   }
 
   @Override
